@@ -31,4 +31,4 @@ else:
       with open("/dbfs/mnt/sntblob/stagefile.txt", "r") as f_read:
         for line in f_read:
           f_write.write(line)
-  print("completed")
+print("completed")
