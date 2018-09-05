@@ -25,7 +25,7 @@ if felmountolva == False:
 else: 
     print("minden ok")  
     dbutils.fs.refreshMounts()
-    datefile = "_"+str(datetime.datetime.now())+".txt"
+    datefile = "_"+datetime.datetime.now().strftime('%Y%m%d%H%M')+".txt"
     with open("/dbfs/mnt/sntblob/dbrick/"+paramfile+datefile, 'w') as f_write:
   # read the file
       with open("/dbfs/mnt/sntblob/stagefile.txt", "r") as f_read:
