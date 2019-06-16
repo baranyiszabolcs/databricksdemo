@@ -1,0 +1,24 @@
+#install Databicks CLI  to local computer
+pip install databricks-cli
+#Get personal access token from databricks:
+https://docs.databricks.com/api/latest/authentication.html#authentication
+# User settings--> Acces Tokens --> Genarate new 
+#configure cli:
+databricks configure --token
+#Databricks website from azure databrick overview: https://northeurope.azuredatabricks.net
+# CLI commands:
+
+databricks fs -h
+databricks workspace -h
+databricks clusters -h
+databricks jobs -h
+databricks libraries -h
+databricks groups --help
+databricks fs ls
+
+
+###############################################
+# Mount  Blob ubder the DBFS:
+
+
+
